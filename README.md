@@ -18,7 +18,7 @@ Its our **HTML template** for the activity.
 - **SVG Shape** – a simple rectangle.  
 - **Progress Bars** – showing sample progress values.  
 - **Contact Form** – includes name, email, phone, and address inputs.  
-- **Search Example** – demonstrates the `<datalist>` element.
+- **Search Example** – we used the '<details>' attribute for the search section.
 
 ---
 
