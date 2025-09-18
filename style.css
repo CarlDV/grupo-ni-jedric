@@ -74,7 +74,7 @@ h1
 body
 {
     animation-name: example;
-    animation-duration: 1ms;
+    animation-duration: 1000ms;
     animation-iteration-count: infinite;
 }
 

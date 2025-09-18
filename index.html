@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="center">
+    <h1>Title</h1>
+    <svg id="funny" width="100px" height="100px">
+        <circle id="left-eye" cx="21" cy="21" r="20" stroke="black" stroke-width="2px" fill="white"></circle>
+        <circle id="right-eye"cx="69" cy="21" r="20" stroke="black" stroke-width="2px" fill="white"></circle>
+        <circle  id="left-pupil"cx="25" cy="21" r="10" stroke="brown" stroke-width="2px" fill="black"></circle>
+        <circle  id="right-pupil"cx="64" cy="21" r="10" stroke="brown" stroke-width="2px" fill="black"></circle>
+        <polygon id="mouth" points="25 50, 37 75, 61 75, 75, 50" stroke="black" stroke-width="2px" fill="white"></polygon>
+        <script>
+            let mouth = document.getElementById("mouth");
+            let points = mouth.getAttribute("points");
 
+            let keyframes = [
+                {points: "25 50, 37 60, 61 60, 75, 50"},
+                {points: "25 50, 37 75, 61 75, 75, 50"},
+                {points: "25 50, 37 60, 61 60, 75, 50"},
+                {points: "25 50, 37 75, 61 75, 75, 50"},
+            ];
+
+            let index = 0;
+            setInterval(() => {
+                mouth.setAttribute("points", keyframes[index].points);
+                index = (index + 1) % keyframes.length;
+            }, 100);
+        </script>
+    </svg>
+    <h1>Skills</h1>
+    HTML:
+    <progress min="0" max="100" value="67"></progress>
+    <br>
+    CSS:
+    <progress min="0" max="100" value="21"></progress>
+    <br>
+    JavaScript:
+    <progress min="0" max="100" value="41"></progress>
+    <br>
+
+
+
+
+
+
+    <h1>Contact Form</h1>
+    Email:      
+    <input placeholder="catmeow0123@catmeowsoftwares.org" type="email" required autofocus>
+    <br>
+    Password:   
+    <input placeholder="ABarbershopHaircutThatCostsAQuarter67" type="password" required>
+
+    <h1>Scard</h1>
+    <select>
+        <option>MEOW</option>
+        <option>MEOW2</option>
+    </select>
+    </div>
+</body>
+</html>
