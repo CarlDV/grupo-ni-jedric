@@ -5,21 +5,71 @@ h1
 }
 
 @keyframes example {
-  0%   {background-color: red;}
+  0%   {background-color: cyan;}
   25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+  50%  {background-color: magenta;}
+  100% {background-color: red;}
+}
+@keyframes borderr 
+{
+    0%   {fill: 3px solid black;}
+    25%  {fill: 3px solid white;}
+    50%  {fill: 3px solid black;}
+    100% {fill: 3px solid white;}
+}
+
+
+
+
+@keyframes eyes
+{
+    0%   {fill: cyan;
+            stroke: magenta ;}
+    25%  {fill: yellow;
+            stroke: blue;}
+    50%  {fill: magenta;
+            stroke: green;}
+    100% {fill: red;
+            stroke: orange;}
+}
+@keyframes left-eye
+{
+    0%   {fill: red;}
+    100%   {fill: magenta;}
+}
+@keyframes right-eye
+{
+    0%   {fill: magenta;}
+    100%   {fill: red;}
 }
 .center
 {
     display: grid;
     place-items: center;
-    border: 3px solid green;
+    animation-name: borderr;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
 
 
 
     
 }
+
+
+#left-pupil
+{
+    animation-name: left-eye;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+#right-pupil
+{
+    animation-name: right-eye;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+
 
 body
 {
@@ -27,3 +77,4 @@ body
     animation-duration: 1ms;
     animation-iteration-count: infinite;
 }
+
