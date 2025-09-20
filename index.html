@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    svg {
+      display: block;
+      margin: 10px 0;
+    }
+    form {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      max-width: 350px;
+    }
+    label {
+      display: inline-block;
+      margin-top: 8px;
+    }
+    input, button, progress {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 6px 12px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Example Page</h1>
+  <svg width="150" height="150">
+    <rect width="150" height="150" fill="lightblue" stroke="black" />
+  </svg>
+  <h2>Skills Progress</h2>
+  <label for="html">HTML Progress:</label>
+  <progress id="html" value="70" max="100"></progress>
+  <br>
+  <label for="css">CSS Progress:</label>
+  <progress id="css" value="60" max="100"></progress>
+  <br>
+  <label for="js">JavaScript Progress:</label>
+  <progress id="js" value="40" max="100"></progress>
+  <h2>Contact Information</h2>
+  <form>
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+    <br><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+    <br><br>
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+63 912 345 6789">
+    <br><br>
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" placeholder="Quezon City, Philippines">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>Search Example</h2>
+  <label for="items">Search for an HTML tag:</label><br>
+  <input list="itemssearch" id="items" name="items" placeholder="Choose an HTML tag" required autofocus>
+  <datalist id="itemssearch">
+    <option value="<html>">
+    <option value="<head>">
+    <option value="<body>">
+    <option value="<div>">
+    <option value="<span>">
+  </datalist>
+</body>
+</html>
