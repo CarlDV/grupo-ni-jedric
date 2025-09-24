@@ -14,7 +14,19 @@
         <circle id="right-eye"cx="69" cy="21" r="20" stroke="black" stroke-width="2px" fill="white"></circle>
         <circle  id="left-pupil"cx="25" cy="21" r="10" stroke="brown" stroke-width="2px" fill="black"></circle>
         <circle  id="right-pupil"cx="64" cy="21" r="10" stroke="brown" stroke-width="2px" fill="black"></circle>
-        <polygon id="mouth" points="25 50, 37 75, 61 75, 75, 50" stroke="black" stroke-width="2px" fill="white"></polygon>
+        <polygon id="mouth" points="25 50 37 75 61 75 75 50" stroke="black" stroke-width="2px" fill="white">
+        <animate 
+            attributeName="points"
+            dur="0.5s"
+            fill="freeze"
+            values="
+            25 50 37 60 61 60 75 50;
+            25 50 37 75 61 75 75 50;
+            25 50 37 60 61 60 75 50"
+            repeatCount="indefinite" />
+        </polygon>
+        
+        <!--
         <script>
             let mouth = document.getElementById("mouth");
             let points = mouth.getAttribute("points");
@@ -32,34 +44,46 @@
                 index = (index + 1) % keyframes.length;
             }, 100);
         </script>
+        -->
     </svg>
     <h1>Skills</h1>
     HTML:
-    <progress min="0" max="100" value="67"></progress>
-    <br>
-    CSS:
-    <progress min="0" max="100" value="21"></progress>
-    <br>
-    JavaScript:
     <progress min="0" max="100" value="41"></progress>
     <br>
-
-
-
-
-
-
-    <h1>Contact Form</h1>
-    Email:      
-    <input placeholder="catmeow0123@catmeowsoftwares.org" type="email" required autofocus>
+    CSS:
+    <progress min="0" max="100" value="41"></progress>
     <br>
-    Password:   
-    <input placeholder="ABarbershopHaircutThatCostsAQuarter67" type="password" required>
+    JavaScript:
+    <progress min="0" max="100" value="21"></progress>
+    <br>
 
-    <h1>Scard</h1>
+
+
+    <h2>Contact Information</h2>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+63 915 916 4983">
+    <br><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="City, Country">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+
+    <h1>Search</h1>
     <select>
-        <option>MEOW</option>
+        <option>MEOW1</option>
         <option>MEOW2</option>
+        <option>MEOW3</option>
+        <option>MEOW4</option>
+        <option>MEOW5</option>
     </select>
     </div>
 </body>
