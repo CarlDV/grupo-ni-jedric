@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    body {
+      margin: 0;
+      overflow: hidden; /* Bubble */
+      background: linear-gradient(-45deg, #0a0ddd, #4dcedf, #305dee, #ccf06c);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
 
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+     .progress-container {
+            width: 50%;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #2196F3; /* A nice blue */
+            border-radius: 5px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .skill-level {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+           
+  </style>
+</head>
+<body>
+    <div id="scrollable">
+
+   <center><h1>My progress in Html</h1></center>
+    <center><p>mark justine d valdez</p></center>
+    <svg width="200" height="100">
+  <rect x="0" y="0" width="200" height="100" fill="lightblue" stroke="black" stroke-width="2" />
+</svg>
+
+<h1>Skills:</h1>
+<p>html</p>
+<p>Css</p>
+<h1>Skill</h1>
+<div>
+<p>Html:</p>
+ <progress value="60" max="100"></progress>
+ </div>
+ <div>
+<p>Css:</p>
+ <progress value="20" max="100"></progress>
+ </div>
+ <h1>Account</h1>
+
+<INPUT ID="email" NAME="email" type="email"
+PLACEHOLDER="HTML@SKILLS.com" />
+<BR />
+<INPUT ID="url" NAME="url" TYPE="url" PLACEHOLDER="HTML.com" />
+<BR />
+<INPUT ID="tel" NAME="tel" TYPE="tel" PLACEHOLDER="555.555.1211"
+/>
+<h1>Search</h1>
+<INPUT ID="car" TYPE="text" LIST="colors" />
+<DATALIST ID="colors">
+    <OPTION VALUE="Black">
+        <OPTION VALUE="Purple">
+            <OPTION VALUE="blue"
+        </DATALIST>
+</div>
+  </body>
+</html>
